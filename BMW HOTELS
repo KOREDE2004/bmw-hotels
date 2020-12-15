@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+<title>
+	Home
+</title>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+     h1 {
+     	 font-family: Helvetica,Monospace;
+     	 font-color: green;
+     	 text-align: left;
+     	 padding: 20px;
+     	}
+</style>
+<body>
+  <div>
+  	<h1>BMW HOTELS</h1>
+  </div>
+</body>
