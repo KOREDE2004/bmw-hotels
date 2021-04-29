@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 100%; 
+    background-image: url("html/f5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header {
+    background-image: url("html/f5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(218, 218, 2, 0.932);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:4vh;
+}
+
+h3 {
+    text-align: center;
+    font-family: cursive;
+}
+
+section {
+      background-image: url("html/w3.jpg");
+}
+
+.y {
+    display: flex;
+    padding: 50px;
+    padding: 70px;
+}
+
+#w {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(146, 140, 140);
+}
+
+#x {
+    margin-left: 50px;
+    width: 50%;
+    height: 400px;
+    background-image: url("html/f2.jpg");
+    background-size: contain;
+}
+
+td {
+    position: center;
+    text-align: center;
+    background-color: red;
+    margin-right: 330px;
+    
+}
+
+label.logo {
+    color: black;
+    font-size: 40px;
+    padding: 0 30px;
+    font-weight: bold;
+    float: left;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label.iconbar {
+    float: right;
+    padding: 0 30px;
+    position: absolute;
+    margin: 20px 50px 90px 350px;
+    color: white;
+    font-size: 15px;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    margin-left: 20px;
+    padding: 0;
+    background-attachment: fixed;
+    float: right;
+    background: rgba(82, 78, 78, 0.329);
+}
+
+nav ul {
+   text-align: center;
+   margin-right: 0px;
+   margin-bottom: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+
+
+nav ul li a {
+    color: rgb(243, 243, 243);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(255, 94, 0);
+    transition:.5s;
+}
+.active {
+    color: yellow;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(197, 194, 194);
+    float: right;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+    padding-bottom: 70px;
+    
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 932px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+} 
+
+nav ul li a {
+    font-size: 16px;
+}
+
+
+@media (max-width: 838px) {
+    .checkbtn{
+        display: block;
+    } 
+    
+    ul {
+        position: relative;
+        width: 190px;
+        height: auto;
+        background:rgb(53, 52, 52);
+        top: 5px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        font-family: monospace;
+        border: 1px solid transparent;
+        
+            
+    }
+    nav ul li {
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+         
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover {
+        background: none;
+        color:yellow;
+    }
+    .active {
+        color:rgb(252, 95, 5)
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+.moon {
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-top: 230px;
+    text-align: center;
+    font-size: 350vh;
+    opacity: 8;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.moon .sun {
+    text-align: center;
+    margin: 20px;
+    font-size: 2.6vh;
+    color: rgb(255, 255, 255);
+    font-family:cursive;
+    margin-top: 30px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    padding: 0px;
+    margin: 25px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+  }
+  
+  button:hover {
+    opacity: 1.0;
+    color: rgb(0,0,0);
+  }
+
+ /* Extra styles for the cancel button */
+ .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(22, 12, 22);
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 50%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+    height: auto;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-image: url("html/f4.jpg");
+    background-size: cover;/* Fallback color */
+    padding-top: 60px;
+    background-repeat: no-repeat; 
+    opacity: 1.4;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: rgb(0, 0, 0);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+
+ 
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 2s;
+    animation: animatezoom 2s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  input[type=email], input[type=password], input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+
+.flex-parent {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+button.margin-right {
+    margin-right: 20px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          Creative Design
+        </title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="creativedesign.css"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+       <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+          <i class="material-icons">view_headline</i>
+         </label>
+	       <label class="logo"><span style="color:orangered">CrEaTiVe</span><span style="color:aqua">DeSiGn</span></label>
+         <ul>
+           <li><a class="active" href="">Home</a></li>
+           <li><a href="">About</a></li>
+           <li><a href="">Designs</a></li>
+           <li><a href="">Apply</a></li>
+           <li><a href="">Templates</a></li>
+           <label class="left">
+
+           </label>
+         </ul>
+       </nav>
+       <div class="moon">
+         <h1>CREATIVE DESIGN </h1>
+         <div class="sun">
+           <p>Resize the browser window to see that this page is responsive by the way</p>
+           <p> Lorem ipsum dolor amet</p>
+         </div>
+       </div>
+       <div class="flex-parent jc-center">
+         <button onclick="document.getElementById('id02').style.display='block'" type="submit" type="submit" class="aqua margin-right" style="color: white;background-color:black;width:auto;text-align: center;width:150px;height:40px;font-weight: bold;">REGISTER</button>
+         <button onclick="document.getElementById('id01').style.display='block'" type="submit" class="transparent" style="color:black;background-color:white;text-align: center;width:150px;height:40px;font-weight: bold;">LOGIN</button>
+         <div id="id01" class="modal">
+      
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <p id="kore1" style="margin-bottom:20px;font-size:25px;font-weight:bolder"><span style="color:orangered">CrEaTiVe<span style="color:aqua">DeSiGn</span></p>
+              <p style="font-size:25px;font-weight: bolder;margin-bottom:20px;">LOGIN</p>
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="html/ko.png" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="email"><b>Email</b></label>
+              <input type="email" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" pattern=".{6,10}" required title="6 to 10 charactersf" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:rgba(176, 4, 255, 0.432);height:auto">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="padding:10px;margin:10px">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+       </div>
+       <div id="id02" class="modal1">
+      
+        <form class="modal1-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <p id="kore2" style="margin-bottom:20px;font-size:25px;position:relative;font-weight:bolder"><span style="color:orangered">CrEaTiVe<span style="color:aqua">DeSiGn</span></p>
+              <p style="font-size:25px;font-weight: bolder;margin-bottom:20px;">REGISTER</p>
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="html/ko1.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="username"><b>Full Name</b></label>
+            <input id="username" name="Username" type="text" placeholder="Enter your Full Name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" pattern=".{6,10}" required title="6 to 10 characters" name="psw" required>
+              
+            <label for="psw"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Confirm Password" pattern=".{6,10}" required title="6 to 10 characters" name="psw" required>
+
+            <button type="submit">Register</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:rgba(162, 169, 170, 0.548);height:auto">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" style="padding:10px;margin:10px">Cancel</button>
+          </div>
+        </form>
+      </div>
+     </div>
+    </body>
+</html>
+    

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          kfoods
+        </title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="kfoods.css"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    <body>
+       <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+          <i class="material-icons">view_headline</i>
+         </label>
+	       <label class="logo"><span style="color:rgb(255, 255, 255)">K</span><span style="color:rgb(199, 9, 9)">FOODS</span></label>
+         <ul>
+           <li><a class="active" href="">Home</a></li>
+           <li><a href="">About Us</a></li>
+           <li><a href="">Menu</a></li>
+           <li><a href="">Services</a></li>
+           <li><a href="">Team</a></li>
+           <li><a href="">Blog</a></li>
+           <li><a href="">Contacts</a></li>
+           
+           <label class="iconbar">
+            <i class="material-icons"></i>
+           </label>
+         </ul>
+       </nav>
+       <div class="moon">
+         <h1 style="font-size:6vh">WELCOME TO KOREDEFOODS </h1>
+         <div class="sun">
+           <p>WE SERVE ONLY THE FRESHEST INGREDIENT!</p>
+         </div>
+       </div>
+       <div class="flex-parent jc-center">
+         <button onclick="document.getElementById('id01').style.display='block'" type="submit" class="transparent" type="submit" class="transparent" style="color:rgb(255, 255, 255);
+         background-color: transparent;width:auto;text-align: center;width:150px;font-weight:
+          bold;height:40px;margin-top: 30px;margin-bottom:100px">Book Your Table</button>
+       </div>
+       <div id="id01" class="modal">
+      
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+    <p id="kore1" style="margin-bottom:20px;font-size:40px;font-weight:bolder;font-family: 'Courier New', Courier, monospace; "><span style="color:white">K<span style="color:red">FOODS</span></p>
+            <p style="font-size:25px;font-weight: bolder;margin-bottom:20px;color:white">LOGIN</p>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="html/ko.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="email" style="color:white"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw" style="color:white"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" pattern=".{6,10}" required title="6 to 10 charactersf" name="psw" required>
+              
+            <button style="color:white" type="submit">Login</button>
+            <label style="color:white">
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:rgba(107, 99, 99, 0.103);height:auto">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="padding:10px;margin:10px">Cancel</button>
+            <span style="color:white" class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+     </div>    
+    </body>
+</html>
+    
