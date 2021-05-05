@@ -1,0 +1,100 @@
+.container{
+    display:flex;
+    justify-content:center;
+    background-image: url("html/wood2.jpg");
+    border-radius: 30px;
+    width: 40%;
+    margin-left: 390px;
+    height: 60vh;
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 10px 10px 10px 10px  rgba(0, 0, 0, 0.76);
+}
+
+body {
+    background-image: url("html/wood1.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .big {
+    margin-top: 180px;
+}
+
+.container .small1 {
+    margin-top: 70px;
+}
+
+.container .small {
+    margin-top: 180px;
+}
+
+.big {
+    margin-right: 100px;
+}
+
+.small {
+    margin-right: 3px;
+}
+ .small1 {
+     margin-right: 100px;
+ }
+h1 {
+    color: white;
+    text-align:center;
+    padding-top: 60px;
+    margin-top: 30px;
+
+}
+
+.container button:hover {
+    color: rgb(255, 174, 0);
+}
+
+@media (max-width: 838px) {
+    .container{
+        display:flex;
+        justify-content:center;
+        background-image: url("html/wood2.jpg");
+        border-radius: 30px;
+        width: 40%;
+        margin-left: 390px;
+        height: 60vh;
+        margin-top: 40px;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 10px 10px 10px 10px  rgba(0, 0, 0, 0.76);
+        text-align: center;
+    }
+    
+    .big {
+        margin-right: 100px;
+    }
+    
+    .small {
+        margin-right: 3px;
+    }
+     .small1 {
+         margin-right: 100px;
+     }
+    h1 {
+        color: white;
+        text-align:center;
+        padding-top: 60px;
+        margin-top: 30px;
+    
+    }
+    
+    .container button:hover {
+        color: rgb(255, 0, 21);
+    }
+
+    body {
+        background-image: url("html/wood1.jfif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        width: 100%;    
+    }
+}
